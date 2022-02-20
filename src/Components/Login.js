@@ -1,6 +1,9 @@
 import React from "react";
 import "./Style/login.css";
 function Login() {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
     <>
       <div className="flex">
@@ -8,7 +11,7 @@ function Login() {
           <div className="innerBox">
             <h1>LOGIN PAGE</h1>
             <hr />
-            <form>
+            <form onSubmit={handleSubmit}>
               <input
                 className="marginTop"
                 type="text"
