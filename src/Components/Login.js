@@ -1,5 +1,4 @@
 import React from "react";
-// import "./login.css";
 import "./Style/login.css";
 function Login() {
   return (
@@ -9,25 +8,29 @@ function Login() {
           <div className="innerBox">
             <h1>LOGIN PAGE</h1>
             <hr />
-            <input
-              className="marginTop"
-              type="text"
-              id="fid"
-              name="fid"
-              placeholder="Enter your id "
-            />
-            <br />
+            <form>
+              <input
+                className="marginTop"
+                type="text"
+                id="fid"
+                name="fid"
+                placeholder="Enter your id "
+              />
+              <br />
 
-            <input
-              className="copyWidth"
-              type="password"
-              id="fpass"
-              name="fpass"
-              placeholder="Password ...."
-            />
-            <br />
+              <input
+                className="copyWidth"
+                type="password"
+                id="fpass"
+                name="fpass"
+                placeholder="Password ...."
+              />
+              <br />
 
-            <button className="button">LOG IN</button>
+              <button type="submit" className="button">
+                LOG IN
+              </button>
+            </form>
             <br />
             <br />
             <br />
